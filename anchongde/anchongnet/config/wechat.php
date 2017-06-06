@@ -16,10 +16,10 @@ return [
     /**
      * 账号基本信息，请从微信公众平台/开放平台获取
      */
-    'app_id'  => env('WECHAT_APPID', 'wx496c753bbea165c9'),         // AppID
-    'secret'  => env('WECHAT_SECRET', '18c0ac572a04628741edf7a67f9cf278'),     // AppSecret
-    'token'   => env('WECHAT_TOKEN', '7s2jBwhXOma57WG87HQj'),          // Token
-    'aes_key' => env('WECHAT_AES_KEY', '99bfw9bUndwGgOsDPk03WiHoXsEdmbCpvJbF95BrYB9'),                    // EncodingAESKey
+    'app_id'  => env('WECHAT_APPID', ''),         // AppID
+    'secret'  => env('WECHAT_SECRET', ''),     // AppSecret
+    'token'   => env('WECHAT_TOKEN', ''),          // Token
+    'aes_key' => env('WECHAT_AES_KEY', ''),                    // EncodingAESKey
 
     /**
      * 日志配置
@@ -48,8 +48,8 @@ return [
      * 微信支付
      */
     'payment' => [
-        'merchant_id'        => env('WECHAT_PAYMENT_MERCHANT_ID', '1379969502'),
-        'key'                => env('WECHAT_PAYMENT_KEY', 'a2b7d40c9d02ef0e3de12b48dd44516b'),
+        'merchant_id'        => env('WECHAT_PAYMENT_MERCHANT_ID', ''),
+        'key'                => env('WECHAT_PAYMENT_KEY', ''),
         'cert_path'          => env('WECHAT_PAYMENT_CERT_PATH', '../cert/apiclient_cert.pem'), // XXX: 绝对路径！！！！
         'key_path'           => env('WECHAT_PAYMENT_KEY_PATH', '../cert/apiclient_key.pem'),      // XXX: 绝对路径！！！！
         // 'device_info'     => env('WECHAT_PAYMENT_DEVICE_INFO', ''),
